@@ -1,0 +1,9 @@
+alias coffee_one_hour="caffeinate -u -t 3600 &"  # keeps system awake for 1 hour
+alias coffee_no_idle_sleep="caffeinate -i"   # keeps system awake until the command is terminated
+alias coffee_no_sleep="caffeinate -d"   # keeps system awake until the command is terminated
+alias coffee_awake="caffeinate"   # keeps system awake until the command is terminated
+alias coffee_iv_drip="caffeinate -disu &"    # keeps system awake for display, idle, and user activity until terminated
+alias coffee_processes="ps aux | grep caffeinate | grep -v grep"   # Check Running Processes via ps
+alias coffee_pgrep="pgrep caffeinate"   # Check Running Processes via ps
+alias coffee_crash="pkill caffeinate"   # Terminate All Caffeinate Processes
+alias coffee_type="pmset -g assertions"   # Check Power Management Assertions
